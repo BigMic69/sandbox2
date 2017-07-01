@@ -1,145 +1,56 @@
-/*---------- $COLORS ----->>>>>*/
-/*---------- COLOR MIXINS ----->>>>>*/
-/*---------- BORDER MIXINS ----->>>>>*/
-/*---------- BOX SHADOW MIXINS ----->>>>>*/
-/*---------- MARGIN/PADDING MIXINS ----->>>>>*/
-/*---------- BACKGROUND IMAGE MIXINS ----->>>>>*/
-/*---------- TRANSITION MIXINS ----->>>>>*/
-/*---------- BORDER RADIUS MIXINS ----->>>>>*/
-/*---------- CONTAINER MIXINS ----->>>>>*/
-/*---------- FONT SIZE MIXINS ----->>>>>*/
-/* line 112, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-h1 {
-  letter-spacing: 1.25px; }
-  @media screen and (min-width: 300px) and (max-width: 550px) and (orientation: portrait) {
-    /* line 112, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h1 {
-      font-size: 2.25em; } }
-  @media screen and (min-width: 551px) and (max-width: 768px) and (orientation: portrait) {
-    /* line 112, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h1 {
-      font-size: 3em; } }
-  @media screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
-    /* line 112, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h1 {
-      font-size: 4em; } }
-  @media screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
-    /* line 112, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h1 {
-      font-size: 2em; } }
-  @media screen and (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
-    /* line 112, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h1 {
-      font-size: 5em; } }
-  @media screen and (min-width: 1281px) and (orientation: landscape) {
-    /* line 112, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h1 {
-      font-size: 5.5em; } }
-
-/* line 127, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-h2 {
-  letter-spacing: 1.25px; }
-  @media screen and (min-width: 300px) and (max-width: 550px) and (orientation: portrait) {
-    /* line 127, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h2 {
-      font-size: 2em; } }
-  @media screen and (min-width: 551px) and (max-width: 768px) and (orientation: portrait) {
-    /* line 127, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h2 {
-      font-size: 2.75em; } }
-  @media screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
-    /* line 127, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h2 {
-      font-size: 4em; } }
-  @media screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
-    /* line 127, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h2 {
-      font-size: 2em; } }
-  @media screen and (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
-    /* line 127, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h2 {
-      font-size: 5em; } }
-  @media screen and (min-width: 1281px) and (orientation: landscape) {
-    /* line 127, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h2 {
-      font-size: 5.5em; } }
-
-/* line 141, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-h3 {
-  letter-spacing: 1px; }
-  @media screen and (min-width: 300px) and (max-width: 767px) and (orientation: portrait) {
-    /* line 141, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h3 {
-      font-size: 2em; } }
-  @media screen and (min-width: 768px) and (orientation: portrait) {
-    /* line 141, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h3 {
-      font-size: 3em; } }
-  @media screen and (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
-    /* line 141, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h3 {
-      font-size: 3.5em; } }
-  @media screen and (min-width: 1025px) and (orientation: landscape) {
-    /* line 141, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    h3 {
-      font-size: 4.5em; } }
-
-/* line 151, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-p {
-  letter-spacing: 1.25px; }
-  @media screen and (min-width: 300px) and (max-width: 767px) and (orientation: portrait) {
-    /* line 151, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    p {
-      font-size: 1.25em; } }
-  @media screen and (min-width: 768px) and (orientation: portrait) {
-    /* line 151, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    p {
-      font-size: 3em; } }
-  @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-    /* line 151, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    p {
-      font-size: 2em; } }
-  @media screen and (min-width: 1025px) and (orientation: landscape) {
-    /* line 151, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
-    p {
-      font-size: 3em; } }
-
-/* line 162, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
+/*---------- $COLORS ----->>>>> */
+/*---------- COLOR MIXINS ----->>>>> */
+/*---------- BORDER MIXINS ----->>>>> */
+/*---------- BOX SHADOW MIXINS ----->>>>> */
+/*---------- MARGIN/PADDING MIXINS ----->>>>> */
+/*---------- BACKGROUND IMAGE MIXINS ----->>>>> */
+/*---------- TRANSITION MIXINS ----->>>>> */
+/*---------- BORDER RADIUS MIXINS ----->>>>> */
+/*---------- CONTAINER MIXINS ----->>>>> */
+/*---------- FONT SIZE MIXINS ----->>>>> */
+/* line 213, ../sass/parts/_toolbox.sass */
 a {
   letter-spacing: 1.25px; }
   @media screen and (min-width: 300px) and (max-width: 767px) and (orientation: portrait) {
-    /* line 162, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
+    /* line 213, ../sass/parts/_toolbox.sass */
     a {
       font-size: 1.25em; } }
   @media screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
-    /* line 162, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
+    /* line 213, ../sass/parts/_toolbox.sass */
     a {
       font-size: 2em; } }
   @media screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
-    /* line 162, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
+    /* line 213, ../sass/parts/_toolbox.sass */
     a {
       font-size: 1.5em; } }
   @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-    /* line 162, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
+    /* line 213, ../sass/parts/_toolbox.sass */
     a {
       font-size: 2.25em; } }
   @media screen and (min-width: 1025px) and (orientation: landscape) {
-    /* line 162, C:/wamp64/www/sandbox2/sass/parts/_toolbox.sass */
+    /* line 213, ../sass/parts/_toolbox.sass */
     a {
       font-size: 2.5em; } }
 
-/* line 1, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 1, ../sass/parts/_base.sass */
 html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px; }
 
-/* line 4, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 4, ../sass/parts/_base.sass */
 body {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #333; }
 
-/*# sourceMappingURL=../css/master.map */
+@media (max-width: 550px) and (orientation: portrait) {
+  /* line 8, ../sass/parts/_base.sass */
+  h1 {
+    font-size: 1em; } }
+
+/*# sourceMappingURL=master.css.map */
