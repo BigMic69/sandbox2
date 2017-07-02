@@ -1,31 +1,35 @@
 .segment1
+  min-height: 100vh
   +cush(0 4% 30px, 5px)
   background: $clr-teal
   display: flex
   flex-flow: row wrap
   .wrap
-    margin-bottom: 10px
+    height: auto
+    +cush(5px, 0)
     display: flex
     justify-content: center
     align-items: center
   .wrap:nth-child(1)
     flex: 1 1 100%
   .wrap:nth-child(2)
-    flex: 1 1 50%
+    flex: 1 1 40%
   .wrap:nth-child(3)
-    flex: 1 1 50%
+    flex: 1 1 40%
   .wrap:nth-child(4)
-    flex: 1 1 33%
+    flex: 1 1 30%
   .wrap:nth-child(5)
-    flex: 1 1 33%
+    flex: 1 1 30%
   .wrap:nth-child(6)
-    flex: 1 1 33%
+    flex: 1 1 30%
   .wrap:nth-child(even)
     color: #333
     background: #fff
+    border: thin solid #333
   .wrap:nth-child(odd)
     color: #fff
     background: #333
+    border: thin solid #fff
   @media (max-width: 768px)
     flex-flow: column
     //align-items: center

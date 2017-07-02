@@ -1,0 +1,21 @@
+.carousel.slide
+  +box-config(100%, 160px, auto, 0)
+  +trans-0
+  @media (min-width: 993px)
+    +box-config(60%, 420px, 10px 20%, 0)
+
+.carousel-inner .item img
+  border-top: thin solid #fff
+  border-left: thin solid #fff
+  border-bottom: thin solid #333
+  border-right: thin solid #333
+
+.wall
+  background-image: url(../img/brickwall-1.png)
+  +bg-cover
+
+.hoverable:hover
+  padding: 0 1px 2px 0
+  transform: scale(1.05)
+  transform-origin: center
+  box-shadow: 1px 3px 3px 0 rgba(200, 200, 200, 0.8), 2px 5px 5px 0 $clr-teal
