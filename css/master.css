@@ -8552,25 +8552,36 @@ section {
   .segment1 .wrap:nth-child(even) {
     color: #333;
     background: #fff;
-    border: thin solid #333; }
-  /* line 29, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+    border: thin solid #333;
+    transform: scale(0.3) translate(20%, -200%);
+      transform-origin: top left;
+    transition: 2s ease-in-out .9s; }
+  /* line 32, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
   .segment1 .wrap:nth-child(odd) {
     color: #fff;
     background: #333;
-    border: thin solid #fff; }
+    border: thin solid #fff;
+    transform: scale(0.3) translate(10%, -150%);
+      transform-origin: center right;
+    transition: 2s ease-in-out .9s; }
   @media (max-width: 768px) {
     /* line 1, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
     .segment1 {
       flex-flow: column; }
-      /* line 36, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+      /* line 42, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
       .segment1 .wrap {
         text-align: center; } }
 
-/* line 39, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+/* line 46, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+.segment1:hover .wrap:nth-child(odd),
+.segment1:hover .wrap:nth-child(even) {
+  transform: scale(1) translate(0, 0); }
+
+/* line 51, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
 .flow-text code {
   padding: 5px 10px; }
 
-/* line 42, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+/* line 54, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
 .container .btn, .container .btn-large {
   width: 100%;
   height: auto;
@@ -8579,7 +8590,7 @@ section {
   box-sizing: border-box;
   border-radius: 10px; }
   @media (min-width: 993px) {
-    /* line 42, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+    /* line 54, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
     .container .btn, .container .btn-large {
       font-size: 2em; } }
 
@@ -8614,12 +8625,5 @@ section {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat; }
-
-/* line 17, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
-.hoverable:hover {
-  padding: 0 1px 2px 0;
-  transform: scale(1.05);
-  transform-origin: center;
-  box-shadow: 1px 3px 3px 0 rgba(200, 200, 200, 0.8), 2px 5px 5px 0 #26a69a; }
 
 /*# sourceMappingURL=../css/master.map */
