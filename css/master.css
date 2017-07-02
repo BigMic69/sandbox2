@@ -8413,26 +8413,30 @@ body {
   padding: 0 0 60px;
   box-sizing: border-box; }
 
-/* line 13, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
-section {
-  min-height: 100vh;
-  padding-top: 15vh; }
-
-/* line 17, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 16, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .container-fluid {
-  margin: 30px 2%;
+  margin: 30px auto;
   padding: 10px;
   box-sizing: border-box; }
-  /* line 19, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+  /* line 18, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
   .container-fluid p {
     font-style: italic;
     line-height: 2.5em; }
 
-/* line 23, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 22, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   border: thin solid rgba(153, 153, 153, 0.1); }
 
-/* line 27, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 26, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+.row {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 29, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .intro-section {
   min-height: 100vh;
   padding-top: 15vh;
@@ -8441,7 +8445,7 @@ section {
   color: #fff;
   background: #333; }
 
-/* line 35, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 37, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .about-section {
   min-height: 100vh;
   padding-top: 15vh;
@@ -8449,7 +8453,7 @@ section {
   text-align: center;
   background: #eee; }
 
-/* line 43, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 45, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .services-section {
   min-height: 100vh;
   padding-top: 15vh;
@@ -8458,7 +8462,7 @@ section {
   color: #fff;
   background: #333; }
 
-/* line 52, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 54, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .contact-section {
   min-height: 100vh;
   padding-top: 15vh;
@@ -8466,7 +8470,7 @@ section {
   text-align: center;
   background: #eee; }
 
-/* line 59, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 61, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 h1,
 h2,
 h3,
@@ -8537,7 +8541,7 @@ h6 {
   position: relative;
   height: auto;
   margin: 0 4% 30px;
-  padding: 5px;
+  padding: 0;
   box-sizing: border-box;
   background: #26a69a;
   display: flex;
@@ -8607,13 +8611,14 @@ h6 {
   opacity: 1; }
 
 /* line 68, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-.flow-text {
-  width: 100%;
+p .flow-text {
+  width: 80%;
   height: auto;
-  margin: 0;
-  padding: 0; }
+  margin: 10px 10%;
+  padding: 0;
+  box-sizing: border-box; }
   /* line 70, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-  .flow-text code {
+  p .flow-text code {
     margin: 0 3px;
     padding: 5px 10px;
     box-sizing: border-box; }
@@ -8639,40 +8644,35 @@ h6 {
 
 /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
 .carousel.slide {
-  width: 100%;
-  height: 200px;
+  width: 300px;
+  height: 160px;
   margin: auto;
   padding: 0;
   box-sizing: border-box;
+  display: block;
   transition: .5s ease-in-out .1s;
   background: #2a2828; }
-  @media (min-width: 551px) and (max-width: 768px) and (orientation: portrait) {
+  @media (min-width: 551px) and (max-width: 768px) {
     /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
     .carousel.slide {
-      width: 80%;
-      height: 200px;
-      margin: 10px 10%;
-      padding: 0;
-      box-sizing: border-box; } }
-  @media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+      width: calc(300px * 1.2);
+      height: calc(160px * 1.2);
+      display: block; } }
+  @media (min-width: 769px) and (max-width: 992px) {
     /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
     .carousel.slide {
-      width: 80%;
-      height: 300px;
-      margin: 10px 10%;
-      padding: 0;
-      box-sizing: border-box; } }
+      width: calc(300px * 1.75);
+      height: calc(160px * 1.75);
+      display: block; } }
   @media (min-width: 993px) {
     /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
     .carousel.slide {
-      width: 70%;
-      height: 500px;
-      margin: 10px 15%;
-      padding: 0;
-      box-sizing: border-box;
+      width: calc(300px * 2.5);
+      height: calc(160px * 2.5);
+      display: block;
       background: #333; } }
 
-/* line 13, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
+/* line 20, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
 .carousel-inner.item {
   width: 100%;
   height: 100%;
@@ -8681,7 +8681,7 @@ h6 {
   border-bottom: thin solid #333;
   border-right: thin solid #333; }
 
-/* line 21, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
+/* line 28, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
 .wall {
   background-image: url(../img/brickwall-1.png);
   background-size: cover;

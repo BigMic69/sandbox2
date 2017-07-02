@@ -10,7 +10,7 @@
 .segment1
   position: relative
   height: auto
-  +cush(0 4% 30px, 5px)
+  +cush(0 4% 30px, 0)
   background: $clr-teal
   display: flex
   flex-flow: row wrap
@@ -65,8 +65,8 @@
     transform: scale(1) translate(0, 0)
     opacity: 1
 
-.flow-text
-  +box-fluid
+p .flow-text
+  +box-config(80%, auto, 10px 10%, 0)
   code
     +cush(0 3px, 5px 10px)
 
