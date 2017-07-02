@@ -8416,24 +8416,23 @@ body {
 /* line 13, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 section {
   min-height: 100vh;
-  padding-top: 15vh;
-  padding-bottom: 50px; }
+  padding-top: 15vh; }
 
-/* line 18, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 17, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .container-fluid {
   margin: 30px 2%;
   padding: 10px;
   box-sizing: border-box; }
-  /* line 20, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+  /* line 19, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
   .container-fluid p {
     font-style: italic;
     line-height: 2.5em; }
 
-/* line 24, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 23, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .container {
   border: thin solid rgba(153, 153, 153, 0.1); }
 
-/* line 28, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 27, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .intro-section {
   min-height: 100vh;
   padding-top: 15vh;
@@ -8442,7 +8441,7 @@ section {
   color: #fff;
   background: #333; }
 
-/* line 36, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 35, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .about-section {
   min-height: 100vh;
   padding-top: 15vh;
@@ -8450,7 +8449,7 @@ section {
   text-align: center;
   background: #eee; }
 
-/* line 44, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 43, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .services-section {
   min-height: 100vh;
   padding-top: 15vh;
@@ -8459,13 +8458,24 @@ section {
   color: #fff;
   background: #333; }
 
-/* line 53, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
-.contact- {
+/* line 52, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+.contact-section {
   min-height: 100vh;
   padding-top: 15vh;
   padding-bottom: 50px;
   text-align: center;
   background: #eee; }
+
+/* line 59, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 @media (min-width: 767px) {
   /* line 2, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
@@ -8480,7 +8490,7 @@ section {
 
 /* line 11, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
 .navbar-default .navbar-brand {
-  transition: .3s ease-in-out .1s; }
+  transition: .5s ease-in-out .1s; }
   /* line 13, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
   .navbar-default .navbar-brand:hover {
     color: #26a69a;
@@ -8515,7 +8525,7 @@ section {
 /* line 1, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
 .info1 {
   position: absolute;
-  top: 10vh;
+  top: 3vh;
   left: 20px;
   font-family: cursive;
   font-size: 1.5em;
@@ -8525,7 +8535,7 @@ section {
 /* line 10, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
 .segment1 {
   position: relative;
-  min-height: 100vh;
+  height: auto;
   margin: 0 4% 30px;
   padding: 5px;
   box-sizing: border-box;
@@ -8534,105 +8544,144 @@ section {
   flex-flow: row wrap; }
   /* line 17, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
   .segment1 .wrap {
-    height: auto;
+    height: 100%;
     margin: 5px;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center; }
-  /* line 23, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+    align-items: center;
+    z-index: 1; }
+  /* line 24, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
   .segment1 .wrap:nth-child(2) {
-    flex: 1 1 100%; }
-  /* line 25, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-  .segment1 .wrap:nth-child(3) {
-    flex: 1 1 40%; }
+    flex: 1 1 100%;
+    transition: 3s ease-in-out 1.6s; }
   /* line 27, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(3) {
+    flex: 1 1 40%;
+    transition: 2.5s ease-in-out 1.3s; }
+  /* line 30, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
   .segment1 .wrap:nth-child(4) {
-    flex: 1 1 40%; }
-  /* line 29, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-  .segment1 .wrap:nth-child(5) {
-    flex: 1 1 30%; }
-  /* line 31, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-  .segment1 .wrap:nth-child(6) {
-    flex: 1 1 30%; }
+    flex: 1 1 40%;
+    transition: 2s ease-in-out 1s; }
   /* line 33, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(5) {
+    flex: 1 1 30%;
+    transition: 1.5s ease-in-out .7s; }
+  /* line 36, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(6) {
+    flex: 1 1 30%;
+    transition: 1s ease-in-out .4s; }
+  /* line 39, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
   .segment1 .wrap:nth-child(7) {
-    flex: 1 1 30%; }
-  /* line 35, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+    flex: 1 1 30%;
+    transition: .5s ease-in-out .1s; }
+  /* line 42, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
   .segment1 .wrap:nth-child(even) {
     color: #333;
     background: #fff;
     border: thin solid #333;
     opacity: 0;
-    transform: scale(0.3) translate(20%, -200%);
-      transform-origin: top left;
-    transition: 2s ease-in-out .9s; }
-  /* line 43, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+    transform: scale(0.1) translate(20%, -200%);
+      transform-origin: top left; }
+  /* line 49, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
   .segment1 .wrap:nth-child(odd) {
     color: #fff;
     background: #333;
     border: thin solid #fff;
     opacity: 0;
     transform: scale(0.1) translate(10%, -150%);
-      transform-origin: center right;
-    transition: 2s ease-in-out .9s; }
+      transform-origin: top right; }
   @media (max-width: 768px) {
     /* line 10, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
     .segment1 {
       flex-flow: column; }
-      /* line 54, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+      /* line 59, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
       .segment1 .wrap {
         text-align: center; } }
 
-/* line 58, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+/* line 63, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
 .move .wrap:nth-child(odd),
 .move .wrap:nth-child(even) {
   transform: scale(1) translate(0, 0);
   opacity: 1; }
 
-/* line 64, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-.flow-text code {
-  padding: 5px 10px; }
-
-/* line 67, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-.container .btn, .container .btn-large {
+/* line 68, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+.flow-text {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 20px 0;
-  box-sizing: border-box;
-  border-radius: 10px; }
-  @media (min-width: 993px) {
-    /* line 67, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-    .container .btn, .container .btn-large {
-      font-size: 2em; } }
+  padding: 0; }
+  /* line 70, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .flow-text code {
+    margin: 0 3px;
+    padding: 5px 10px;
+    box-sizing: border-box; }
+
+/* line 73, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+.button-wrap {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0; }
+  /* line 75, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .button-wrap .btn.btn-default, .button-wrap .btn-default.btn-large {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-radius: 10px; }
+    @media (min-width: 993px) {
+      /* line 75, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+      .button-wrap .btn.btn-default, .button-wrap .btn-default.btn-large {
+        font-size: 2em; } }
 
 /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
 .carousel.slide {
   width: 100%;
-  height: 160px;
+  height: 200px;
   margin: auto;
   padding: 0;
   box-sizing: border-box;
-  transition: .3s ease-in-out .1s; }
+  transition: .5s ease-in-out .1s;
+  background: #2a2828; }
+  @media (min-width: 551px) and (max-width: 768px) and (orientation: portrait) {
+    /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
+    .carousel.slide {
+      width: 80%;
+      height: 200px;
+      margin: 10px 10%;
+      padding: 0;
+      box-sizing: border-box; } }
+  @media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+    /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
+    .carousel.slide {
+      width: 80%;
+      height: 300px;
+      margin: 10px 10%;
+      padding: 0;
+      box-sizing: border-box; } }
   @media (min-width: 993px) {
     /* line 1, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
     .carousel.slide {
-      width: 60%;
-      height: 420px;
-      margin: 10px 20%;
+      width: 70%;
+      height: 500px;
+      margin: 10px 15%;
       padding: 0;
-      box-sizing: border-box; } }
+      box-sizing: border-box;
+      background: #333; } }
 
-/* line 7, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
-.carousel-inner .item img {
+/* line 13, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
+.carousel-inner.item {
+  width: 100%;
+  height: 100%;
   border-top: thin solid #fff;
   border-left: thin solid #fff;
   border-bottom: thin solid #333;
   border-right: thin solid #333; }
 
-/* line 13, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
+/* line 21, C:/wamp64/www/sandbox2/sass/parts/_about.sass */
 .wall {
   background-image: url(../img/brickwall-1.png);
   background-size: cover;

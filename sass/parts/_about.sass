@@ -1,10 +1,18 @@
 .carousel.slide
-  +box-config(100%, 160px, auto, 0)
+  +box-config(100%, 200px, auto, 0)
   +trans-0
+  background: rgb(42, 40, 40)
+  @media (min-width: 551px) and (max-width: 768px) and (orientation: portrait)
+    +box-config(80%, 200px, 10px 10%, 0)
+  @media (min-width: 769px) and (max-width: 992px) and (orientation: portrait)
+    +box-config(80%, 300px, 10px 10%, 0)
   @media (min-width: 993px)
-    +box-config(60%, 420px, 10px 20%, 0)
+    +box-config(70%, 500px, 10px 15%, 0)
+    background: #333
 
-.carousel-inner .item img
+.carousel-inner.item
+  width: 100%
+  height: 100%
   border-top: thin solid #fff
   border-left: thin solid #fff
   border-bottom: thin solid #333

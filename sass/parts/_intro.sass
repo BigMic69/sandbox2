@@ -1,6 +1,6 @@
 .info1
   position: absolute
-  top: 10vh
+  top: 3vh
   left: 20px
   font-family: cursive
   font-size: 1.5em
@@ -9,45 +9,50 @@
 
 .segment1
   position: relative
-  min-height: 100vh
+  height: auto
   +cush(0 4% 30px, 5px)
   background: $clr-teal
   display: flex
   flex-flow: row wrap
   .wrap
-    height: auto
-    +cush(5px, 0)
+    height: 100%
+    +cush(5px, 10px)
     display: flex
     justify-content: center
     align-items: center
+    z-index: 1
   .wrap:nth-child(2)
     flex: 1 1 100%
+    +trans-5
   .wrap:nth-child(3)
     flex: 1 1 40%
+    +trans-4
   .wrap:nth-child(4)
     flex: 1 1 40%
+    +trans-3
   .wrap:nth-child(5)
     flex: 1 1 30%
+    +trans-2
   .wrap:nth-child(6)
     flex: 1 1 30%
+    +trans-1
   .wrap:nth-child(7)
     flex: 1 1 30%
+    +trans-0
   .wrap:nth-child(even)
     color: #333
     background: #fff
     border: thin solid #333
     opacity: 0
-    transform: scale(.3) translate(20%, -200%)
+    transform: scale(.1) translate(20%, -200%)
       origin: top left
-    +trans-2
   .wrap:nth-child(odd)
     color: #fff
     background: #333
     border: thin solid #fff
     opacity: 0
     transform: scale(.1) translate(10%, -150%)
-      origin: center right
-    +trans-2
+      origin: top right
   @media (max-width: 768px)
     flex-flow: column
     //align-items: center
@@ -57,15 +62,18 @@
 .move
   .wrap:nth-child(odd),
   .wrap:nth-child(even)
-    //transform-origin: center
     transform: scale(1) translate(0, 0)
     opacity: 1
 
-.flow-text code
-  padding: 5px 10px
+.flow-text
+  +box-fluid
+  code
+    +cush(0 3px, 5px 10px)
 
-.container .btn
-  +box-config(100%, auto, 0, 20px 0)
-  +b-rad-10
-  @media (min-width: 993px)
-    font-size: 2em
+.button-wrap
+  +box-fluid
+  .btn.btn-default
+    +box-config(100%, auto, 0, 20px 0)
+    +b-rad-10
+    @media (min-width: 993px)
+      font-size: 2em
