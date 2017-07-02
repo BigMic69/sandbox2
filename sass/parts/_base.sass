@@ -9,37 +9,35 @@ body
   padding: 0 0 60px
   box-sizing: border-box
 
-.container
-  border: thin solid rgba(#999999, 0.4)
+section
+  min-height: 100vh
+  padding-top: 15vh
+  padding-bottom: 50px
 
-.collapse ul li:hover
-  color: #333
-  background: rgba(140, 140, 140, 0.30)
+.container-fluid
+  +cush(30px 2%, 10px)
+  p
+    line-height: 2.5em
+
+.container
+  border: thin solid rgba(153, 153, 153, 0.1)
 
 .intro-section
-    min-height: 100vh
-    padding-top: 150px
     text-align: left
     color: #fff
     background: #333
 
 .about-section
-    min-height: 100vh
-    padding-top: 150px
     text-align: center
     background: #eee
 
 
 .services-section
-    min-height: 100vh
-    padding-top: 150px
     text-align: center
     color: #fff
     background: #333
 
 
 .contact-section
-    min-height: 100vh
-    padding-top: 150px
     text-align: center
     background: #eee

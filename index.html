@@ -34,7 +34,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container nav-container">
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -79,9 +79,12 @@
           <h4>H4 Header</h4>
           <h5>H5 Header</h5>
           <h6>H6 Header</h6>
-          <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link
-            the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-          <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+          <div class="container-fluid">
+            <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+          </div>
+          <div class="container">
+            <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+          </div>
         </div>
       </div>
     </div>
@@ -121,7 +124,9 @@
   </section>
 
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  </script>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>

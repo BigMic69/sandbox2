@@ -1,0 +1,29 @@
+@media(min-width:767px)
+  .navbar
+    padding: 0
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out
+
+  .top-nav-collapse
+    padding: 0
+
+.navbar-default .navbar-brand:hover
+  color: $clr-teal
+
+.nav-container
+  +cush(5px auto, 0 10px)
+
+.collapse ul
+  background: #fff
+  li
+    background: #fff
+    &:hover
+      background: rgba(200, 200, 200, 0.6)
+      border-bottom: thin solid $clr-teal
+    a
+      color: #333
+
+.navbar-default .navbar-nav>li>a
+  @media (min-width: 993px) and (orientation: landscape)
+    font-size: 2em
