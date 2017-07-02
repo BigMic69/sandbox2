@@ -1,4 +1,42 @@
 .segment1
-  .container
+  +cush(0 4% 30px, 5px)
+  background: $clr-teal
+  display: flex
+  flex-flow: row wrap
+  .wrap
+    margin-bottom: 10px
     display: flex
     justify-content: center
+    align-items: center
+  .wrap:nth-child(1)
+    flex: 1 1 100%
+  .wrap:nth-child(2)
+    flex: 1 1 50%
+  .wrap:nth-child(3)
+    flex: 1 1 50%
+  .wrap:nth-child(4)
+    flex: 1 1 33%
+  .wrap:nth-child(5)
+    flex: 1 1 33%
+  .wrap:nth-child(6)
+    flex: 1 1 33%
+  .wrap:nth-child(even)
+    color: #333
+    background: #fff
+  .wrap:nth-child(odd)
+    color: #fff
+    background: #333
+  @media (max-width: 768px)
+    flex-flow: column
+    //align-items: center
+    .wrap
+      text-align: center
+
+.flow-text code
+  padding: 5px 10px
+
+.container .btn
+  +box-config(100%, auto, 0, 20px 0)
+  +b-rad-10
+  @media (min-width: 993px)
+    font-size: 2em

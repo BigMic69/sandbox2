@@ -11,6 +11,8 @@
 
   <title>Scrolling Nav - Start Bootstrap Template</title>
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -52,13 +54,13 @@
           <li class="hidden">
             <a class="page-scroll" href="#page-top"></a>
           </li>
-          <li>
+          <li class="hoverable">
             <a class="page-scroll" href="#about">About</a>
           </li>
-          <li>
+          <li class="hoverable">
             <a class="page-scroll" href="#services">Services</a>
           </li>
-          <li>
+          <li class="hoverable">
             <a class="page-scroll" href="#contact">Contact</a>
           </li>
         </ul>
@@ -72,19 +74,31 @@
   <section id="intro" class="intro-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 segment1">
-          <h1>H1 Header</h1>
-          <h2>H2 Header</h2>
-          <h3>H3 Header</h3>
-          <h4>H4 Header</h4>
-          <h5>H5 Header</h5>
-          <h6>H6 Header</h6>
-          <div class="container-fluid">
-            <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+        <div class="segment1">
+          <div class="wrap">
+            <h1>H1 Header</h1>
           </div>
-          <div class="container">
-            <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+          <div class="wrap">
+            <h2>H2 Header</h2>
           </div>
+          <div class="wrap">
+            <h3>H3 Header</h3>
+          </div>
+          <div class="wrap">
+            <h4>H4 Header</h4>
+          </div>
+          <div class="wrap">
+            <h5>H5 Header</h5>
+          </div>
+          <div class="wrap">
+            <h6>H6 Header</h6>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <p class="flow-text"><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+        </div>
+        <div class="container">
+          <a class="btn btn-default page-scroll" href="#about"><i class="material-icons">import_export</i> Click Me to Scroll Down!</a>
         </div>
       </div>
     </div>

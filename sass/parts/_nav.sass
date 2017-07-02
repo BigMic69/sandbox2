@@ -8,8 +8,11 @@
   .top-nav-collapse
     padding: 0
 
-.navbar-default .navbar-brand:hover
-  color: $clr-teal
+.navbar-default .navbar-brand
+  +trans-0
+  &:hover
+    color: $clr-teal
+    transform: scale(1.2)
 
 .nav-container
   +cush(5px auto, 0 10px)
@@ -17,6 +20,7 @@
 .collapse ul
   background: #fff
   li
+    margin-right: 5px
     background: #fff
     &:hover
       background: rgba(200, 200, 200, 0.6)

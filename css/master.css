@@ -8428,26 +8428,28 @@ section {
 
 /* line 22, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .container {
+  margin: 0 auto 10px;
+  padding: 0;
   border: thin solid rgba(153, 153, 153, 0.1); }
 
-/* line 25, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 26, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .intro-section {
   text-align: left;
   color: #fff;
   background: #333; }
 
-/* line 30, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 31, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .about-section {
   text-align: center;
   background: #eee; }
 
-/* line 35, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 36, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .services-section {
   text-align: center;
   color: #fff;
   background: #333; }
 
-/* line 41, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
+/* line 42, C:/wamp64/www/sandbox2/sass/parts/_base.sass */
 .contact-section {
   text-align: center;
   background: #eee; }
@@ -8464,36 +8466,100 @@ section {
     padding: 0; } }
 
 /* line 11, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
-.navbar-default .navbar-brand:hover {
-  color: #26a69a; }
+.navbar-default .navbar-brand {
+  transition: .3s ease-in-out .1s; }
+  /* line 13, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
+  .navbar-default .navbar-brand:hover {
+    color: #26a69a;
+    transform: scale(1.2); }
 
-/* line 14, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
+/* line 17, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
 .nav-container {
   margin: 5px auto;
   padding: 0 10px; }
 
-/* line 17, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
+/* line 20, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
 .collapse ul {
   background: #fff; }
-  /* line 19, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
+  /* line 22, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
   .collapse ul li {
+    margin-right: 5px;
     background: #fff; }
-    /* line 21, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
+    /* line 25, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
     .collapse ul li:hover {
       background: rgba(200, 200, 200, 0.6);
       border-bottom: thin solid #26a69a; }
-    /* line 24, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
+    /* line 28, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
     .collapse ul li a {
       color: #333; }
 
 @media (min-width: 993px) and (orientation: landscape) {
-  /* line 27, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
+  /* line 31, C:/wamp64/www/sandbox2/sass/parts/_nav.sass */
   .navbar-default .navbar-nav > li > a {
     font-size: 2em; } }
 
-/* line 2, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
-.segment1 .container {
+/* line 1, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+.segment1 {
+  margin: 0 4% 30px;
+  padding: 5px;
+  background: #26a69a;
   display: flex;
-  justify-content: center; }
+  flex-flow: row wrap; }
+  /* line 6, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* line 11, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(1) {
+    flex: 1 1 100%; }
+  /* line 13, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(2) {
+    flex: 1 1 50%; }
+  /* line 15, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(3) {
+    flex: 1 1 50%; }
+  /* line 17, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(4) {
+    flex: 1 1 33%; }
+  /* line 19, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(5) {
+    flex: 1 1 33%; }
+  /* line 21, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(6) {
+    flex: 1 1 33%; }
+  /* line 23, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(even) {
+    color: #333;
+    background: #fff; }
+  /* line 26, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+  .segment1 .wrap:nth-child(odd) {
+    color: #fff;
+    background: #333; }
+  @media (max-width: 768px) {
+    /* line 1, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+    .segment1 {
+      flex-flow: column; }
+      /* line 32, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+      .segment1 .wrap {
+        text-align: center; } }
+
+/* line 35, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+.flow-text code {
+  padding: 5px 10px; }
+
+/* line 38, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+.container .btn, .container .btn-large {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-radius: 10px; }
+  @media (min-width: 993px) {
+    /* line 38, C:/wamp64/www/sandbox2/sass/parts/_intro.sass */
+    .container .btn, .container .btn-large {
+      font-size: 2em; } }
 
 /*# sourceMappingURL=../css/master.map */
